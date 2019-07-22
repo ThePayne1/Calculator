@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+  
+	<ion-item>
+		<ion-label class="value">
+		{{value}}
+		</ion-label>
+	</ion-item>
+    
+	<div>
+	<ion-button (click)="onButtonPress(7)" class="numbutton">7</ion-button>
+	<ion-button (click)="onButtonPress(8)" class="numbutton">8</ion-button>
+	<ion-button (click)="onButtonPress(9)" class="numbutton">9</ion-button>
+	<ion-button (click)="onButtonPress('/')" class="operbutton" color="dark">/</ion-button>
+	</div>
+	<div>
+	<ion-button (click)="onButtonPress(4)" class="numbutton">4</ion-button>
+	<ion-button (click)="onButtonPress(5)" class="numbutton">5</ion-button>
+	<ion-button (click)="onButtonPress(6)" class="numbutton">6</ion-button>
+	<ion-button (click)="onButtonPress('x')" class="operbutton" color="dark">X</ion-button>
+	</div>
+	<div>
+	<ion-button (click)="onButtonPress(1)" class="numbutton">1</ion-button>
+	<ion-button (click)="onButtonPress(2)" class="numbutton">2</ion-button>
+	<ion-button (click)="onButtonPress(3)" class="numbutton">3</ion-button>
+	<ion-button (click)="onButtonPress('-')" class="operbutton" color="dark">-</ion-button>
+	</div>
+	<div>
+	<ion-button (click)="onButtonPress(0)" class="numbutton">0</ion-button>
+	<ion-button (click)="onButtonPress('=')" class="operbutton" color="medium">=</ion-button>
+	<ion-button (click)="onButtonPress('C')" class="operbutton" color="dark">C</ion-button>
+	<ion-button (click)="onButtonPress('+')" class="operbutton" color="dark">+</ion-button>
+	</div>
+  </div>
+  <div>
+  Welcome to my Calculator app.
+  </div>
+  
+  <div>
+  Press C to Clear
+  </div>
+  
+</ion-content>
